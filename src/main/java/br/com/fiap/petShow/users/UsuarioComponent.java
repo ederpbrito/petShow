@@ -1,4 +1,4 @@
-package br.com.fiap.petShow.Users;
+package br.com.fiap.petShow.users;
 
 import br.com.fiap.petShow.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 public class UsuarioComponent {
 
     @Autowired
-    UsuarioRepository usuarioRepository;
+    private UsuarioRepository usuarioRepository;
 
     public boolean autenticarLogin(String login, String senha){
         Usuario usuario = usuarioRepository.findByLogin(login);
