@@ -1,6 +1,6 @@
 package br.com.fiap.petShow.security;
 
-import br.com.fiap.petShow.Users.Usuario;
+import br.com.fiap.petShow.user.Usuario;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;

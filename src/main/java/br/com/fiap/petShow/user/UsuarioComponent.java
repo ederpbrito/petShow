@@ -1,4 +1,4 @@
-package br.com.fiap.petShow.users;
+package br.com.fiap.petShow.user;
 
 import br.com.fiap.petShow.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,6 +1,6 @@
 package br.com.fiap.petShow.security;
 
-import br.com.fiap.petShow.Users.Usuario;
+import br.com.fiap.petShow.user.Usuario;
 import org.springframework.security.core.userdetails.User;
 import br.com.fiap.petShow.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
