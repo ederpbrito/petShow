@@ -27,14 +27,14 @@ public class ProdutoComponent {
         return produto;
     }
 
-    public Produto buscarPorNome(String nome){
+    public List<Produto> buscarPorNome(String nome){
 
-        Produto produto = produtoRepository.findByNome(nome);
+        List<Produto> produtos = produtoRepository.findByNome(nome);
 
-        if(produto == null){
+        if(produtos.isEmpty()){
             throw new RuntimeException("Produto não encontrado!");
         }else{
-            return produto;
+            return produtos;
         }
     }
 

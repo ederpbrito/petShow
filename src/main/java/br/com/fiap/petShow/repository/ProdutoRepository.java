@@ -8,7 +8,7 @@ import java.util.List;
 
 public interface ProdutoRepository extends MongoRepository<Produto, String> {
        List<Produto> findAll();
-       @Query("{name : {$regex : ?0}}")
-       Produto findByNome(String nome);
+       @Query("{nome : {$regex : ?0}}")
+       List<Produto> findByNome(String nome);
        Produto findByCodigo(String codigo);
 }
