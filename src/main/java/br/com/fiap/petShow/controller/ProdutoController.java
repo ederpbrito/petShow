@@ -30,7 +30,7 @@ public class ProdutoController {
     }
 
     @GetMapping("/nome/{nome}")
-    public Produto buscarPorNome(@PathVariable(value = "nomeproduto") String nomeproduto){
+    public Produto buscarPorNome(@PathVariable(value = "nome") String nomeproduto){
         return produtoComponent.buscarPorNome(nomeproduto);
     }
 
